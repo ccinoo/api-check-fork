@@ -1,0 +1,10 @@
+services:
+  api-check:
+    image: ghcr.io/rickcert/api-check:latest
+    container_name: api-check
+    ports:
+      - "13000:13000"
+   # environment:
+   #   PASSWORD: you_password # 将 you_password 替换成你的实际密码
+    volumes:
+      - /app/data:/app/data # 将 you_path 替换成你实际的本地路径
